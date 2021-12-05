@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>number-guesser</title>
+</head>
+
+<body>
+    <div id="modal">
+        <div class="modal-container">
+            <div class="win-image">
+                <!-- <img src="image/success.png" alt="win"> -->
+            </div>
+            <div class="win-btn">
+                <!-- <h2>You Win!</h2> -->
+            </div>
+            <div class="win-msg">
+                <!-- <p>You have win at <span>2nd</span> chance!</p> -->
+            </div>
+            <button class="again-btn"><img src="image/again.png" alt="again"></button>
+        </div>
+    </div>
+
+    <main>
+        <div class="content-wrapper">
+            <h2 class="wrapper-header">Guess a number between 1-20</h2>
+            <div class="second-wrapper">
+                <div class="left-col">
+                    <img src="image/thinking.png" alt="thinking">
+                </div>
+
+                <div class="middle-col">
+                    <form>
+                        <div onclick="inputFocus()" class="enter-number-text">
+                            <h3>Enter the number</h3>
+                        </div>
+                        <div class="input-section">
+                            <input class="input" id="in-put" type="text">
+                            <button class="submit">
+                                <img src="image/Qs.png" alt="qs">
+                            </button>
+                        </div>
+                    </form>
+                    <div class="result-section">
+                        <h4 class="result-number">Entered Nothing!</h4>
+                        <h6 class="result">Result = null </h6>
+                    </div>
+                </div>
+                <div class="right-col">
+                    <div class="guess-left">
+                        <p id="guesses-left">You have 5 guesses left!</p>
+                    </div>
+                    <div id="too-low">
+                        <div class="count-box">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <h2>Too Low</h2>
+                    </div>
+                    <div id="too-high">
+                        <div class=count-box>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <h2>Too high</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

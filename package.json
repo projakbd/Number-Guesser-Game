@@ -1,0 +1,17 @@
+{
+  "name": "number-guesser",
+  "version": "1.0.0",
+  "description": "This is a simple game for Bohubrihi assignment.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "number-guesser-game"
+  ],
+  "author": "Md. Jakir Hosen",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.0"
+  }
+}
